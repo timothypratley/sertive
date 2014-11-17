@@ -102,6 +102,8 @@
 ;; prn is easy to search for and delete later.
 (doto (repeatedly 10 rand) pprint)
 ;; Prefer pprint for large values
+;; Problem:
+;; clojure.repl should provide a spy macro which shows the form and values.
 
 (doto i assert) ; asserts 2 and returns 2
 ;; is returns its argument, so can be composed with assert and doto.
