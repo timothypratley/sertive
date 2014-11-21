@@ -1,6 +1,6 @@
 # sert
 
-Recommendations for using assertions in Clojure.
+Misadventures in error reporting in Clojure.
 
 ## Usage
 
