@@ -132,3 +132,13 @@
 ;; * default to throwing an exception
 ;; * allow rebinding to do something else
 ;; * shadow the local with the result of the rebound function?
+
+
+(defn then [x pred f]
+  (if (pred x)
+    (f x)
+    x))
+
+(then (+ 2 3) odd? mod)
+
+;; collect examples
