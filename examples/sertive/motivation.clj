@@ -1,9 +1,8 @@
-(ns sert
+(ns sertive.motivation
   "My misguided adventures in error reporting.
   This namespace is intended to be evaluated interactively at a REPL."
   (:require [clojure.test :refer [is do-report]]
-            [clojure.pprint :refer [pprint]]
-            [slingshot.slingshot :refer [try+ throw+]]))
+            [clojure.pprint :refer [pprint]]))
 
 (def i 2)
 
