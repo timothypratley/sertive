@@ -47,7 +47,7 @@
   ([id options cause]
    ;; TODO: would like to automatically capture function parameter bindings...
    (let [auto-env {} #_(sc.impl/extract-local-names)
-         data (merge auto-env options)
+         data (merge auto-env options {:id id})
          msg (format-msg id data)]
      (ex-info msg data cause))))
 
